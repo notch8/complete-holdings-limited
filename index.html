@@ -21,15 +21,18 @@
 
     header {
       background-color: rgb(183, 0, 2);
-      padding: 8% 5%;
       border-bottom: 5px solid black;
-      height: 12vh;
+      display: flex;
+      min-height: 15vh;
     }
 
     h1 {
       color: #ffffff;
       font-size: 24px;
       font-weight: 100;
+      align-self: flex-end;
+      padding-left: 2vw;
+      padding-bottom: 1.5vw;
     }
 
     .space_sunrise {
@@ -76,11 +79,12 @@
 
 
     /* ============================
-MEDIA QUERIES
-============================*/
+    MEDIA QUERIES
+    ============================*/
+    /* mobile phone landscape */
     @media screen and (min-width: 576px) {
       h1 {
-        font-size: 6vw;
+        font-size: 5vw;
       }
 
 
@@ -94,6 +98,7 @@ MEDIA QUERIES
       }
     }
 
+    /* tablet */
     @media screen and (min-width: 768px) {
 
       main,
@@ -106,27 +111,30 @@ MEDIA QUERIES
       }
     }
 
+    /* small laptop */
     @media screen and (min-width: 992px) {
       header {
         padding: 0;
-        display: flex;
-        height: 150px;
+        height: 19vh;
+        min-height: 85px;
         border-bottom: 10px solid black;
       }
 
       h1 {
-        width: 75%;
-        padding: 7vh 0 0 3vh;
-        font-size: 5vw;
+        width: 80vw;
+        font-size: 6vh;
+        /* text-align: center; */
       }
 
       .space_sunrise {
         display: inherit;
-        width: 25%;
+        width: 20vw;
       }
 
       main {
         display: flex;
+        width: 90vw;
+        margin: 0 auto;
       }
 
       main,
@@ -139,16 +147,26 @@ MEDIA QUERIES
       }
 
       .value {
-        width: 190px;
-        height: 170px;
+        width: 20vw;
+        height: 16vw;
       }
 
       h2 {
-        font-size: 36px;
+        font-size: 3.2vw;
+      }
+
+      p,
+      li {
+        font-size: 1.5vw;
       }
 
       .info {
         margin-top: 15px;
+        margin-bottom: 40px;
+      }
+
+      h4 {
+        font-size: 1.6vw;
       }
 
       footer {
